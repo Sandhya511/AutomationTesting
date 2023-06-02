@@ -1,0 +1,153 @@
+{
+  "id": "f3e54642-1313-4ca8-a363-be9cdc310aa3",
+  "version": "2.0",
+  "name": "Day - Four",
+  "url": "https://demo.opencart.com/index.php?route=account/login&language=en-gb",
+  "tests": [{
+    "id": "a3562f2b-ab6a-49ad-9506-c7b05fa626cb",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "f36039d4-0de8-48ed-898f-0cb7b3738a45",
+    "name": "TC_001",
+    "commands": [{
+      "id": "430ce6cb-a60d-4ec9-9175-80bf820ae1fc",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=account/register&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba032188-64f1-4e02-baf5-47a0c5a2f758",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48b7e0fe-c65c-4285-9937-eaa8903d18aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-register']/div/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a39d7434-4e46-46f9-a343-d4560cb1bd07",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "10fd0f3e-a152-4fbf-83f2-eebd7c2489ec",
+    "name": "TC_002",
+    "commands": [{
+      "id": "2c9cb7d7-c553-45a4-8700-8464eec5afa8",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=account/login&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81358224-080c-4b2e-b852-01e37a201b9f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8f47b8b-e662-41da-9ee6-4c91b1f464c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c1b43be-279b-4879-80bf-80638c9c4fa8",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "sandhyaak2003@gmail.com"
+    }, {
+      "id": "0cc44dfe-7a52-4dd9-857f-693d4b323f06",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a6f86d6-b5c2-4ee6-a1b9-1d17d87a4e0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sandhya"
+    }, {
+      "id": "6c13bfb3-29fb-4497-bf52-89e675c48636",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3936f61a-a7cd-4a75-8a54-4c05a7a35b14",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b61ba207-d9de-4899-bf12-453e8fec3e72",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a3562f2b-ab6a-49ad-9506-c7b05fa626cb"]
+  }],
+  "urls": [],
+  "plugins": []
+}
